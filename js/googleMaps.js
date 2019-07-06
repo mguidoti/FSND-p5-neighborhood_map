@@ -2,6 +2,8 @@
 // This array is intended to be accessed in app.js.
 let markers = [];
 
+// Create a new variable to hold the future map while being
+// accessible externally, from app.js.
 let map = [];
 
 function initMap() {
