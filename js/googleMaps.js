@@ -118,10 +118,9 @@ function initMap() {
     let bounds = new google.maps.LatLngBounds();
 
     // Go through the location array to create an array of markers.
-    for (var i = 0; i < myPlaces.length; i++) {
-        
+    for (let i = 0; i < myPlaces.length; i++) {
         // Create a marker for each location, and put into the markers array.
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
           map: map,
           position: myPlaces[i].position,
           title: myPlaces[i].title,
@@ -137,17 +136,17 @@ function initMap() {
         // clicked (that's what the 'this' part is doing here).
         marker.addListener('click', function() {
             this.setIcon(clickedIcon);
-          populateInfoWindow(this, infowindow);
+            populateInfoWindow(this, infowindow);
         });
 
         // Adds two event listeners, one for mouseover and one for mouseout
         // to highlight the markers' icons accordingly.
         marker.addListener('mouseover', function() {
-          this.setIcon(highlightedIcon);
+            this.setIcon(highlightedIcon);
         });
 
         marker.addListener('mouseout', function() {
-          this.setIcon(defaultIcon);
+            this.setIcon(defaultIcon);
         });
 
         // Adds the marker to the LatLngBounds instance...
@@ -161,8 +160,10 @@ function initMap() {
     // icon of that color. The icon will be 21px wide by 34px, have an origin
     // on 0, 0 and be anchored at 10, 34.
     function makeMarkerIcon(markerColor) {
-        var markerImage = new google.maps.MarkerImage(
-        'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|' + markerColor + '|40|_|%E2%80%A2',
+        const markerImage = new google.maps.MarkerImage(
+        'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|' + 
+            markerColor + 
+            '|40|_|%E2%80%A2',
         new google.maps.Size(21, 34),
         new google.maps.Point(0, 0),
         new google.maps.Point(10, 34),
@@ -170,5 +171,4 @@ function initMap() {
         
         return markerImage;
     }
-
 }

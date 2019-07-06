@@ -78,7 +78,6 @@ var ViewModel = function() {
             // Also set all markers to 'visible', and remove animation if exists.
             markers.forEach(function(eachMarker) {
                 eachMarker.setMap(map);
-
                 if (eachMarker.getAnimation() !== null) {
                     eachMarker.setAnimation(null);
                 }
@@ -96,7 +95,6 @@ var ViewModel = function() {
                     markers.forEach(function(eachMarker) {
                         if(eachMarker.title == each.title) {
                             eachMarker.setMap(map);
-                            
                             if (eachMarker.getAnimation() !== null) {
                                 eachMarker.setAnimation(null);
                             }
@@ -107,18 +105,16 @@ var ViewModel = function() {
                     markers.forEach(function(eachMarker) {
                         if(eachMarker.title == each.title) {
                             eachMarker.setMap(null);
-
                             if (eachMarker.getAnimation() !== null) {
                                 eachMarker.setAnimation(null);
                             }
-                            
                         }
-                    }); 
+                    });
                 }
             });
         }
     }
-};
+}
 
 ko.applyBindings(new ViewModel());
 
