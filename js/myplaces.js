@@ -1,6 +1,4 @@
-/**
-*Data model to store locations
-*/
+// Array hard coding locations
 const myPlaces = [
 	{
 		title: 'Escola Estadual de Ensino Médio Anne Frank',
