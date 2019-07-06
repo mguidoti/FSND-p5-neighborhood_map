@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <title>My hometown - Important locations for me ;)</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/poa-skyline-live-trace.png" alt="Porto Alegre-RS Skyline">
+            <div id="header-title">
+                <h1>Porto Alegre - RS</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <p id="presentation"><span>This is a map listing some of the most important locations 
+                        of my childhood and teenage years. It was quite nostalgic to build this project ;)</span></p>
+                </div>
+            </section>
+            <section>
+                <div id="filter">
+                    <div id ="filter-text">
+                        <h2>Filter me!</h2>
+                    </div>
+                    <div id="dropdown">
+                        <div id="filter-lst">
+                            <select data-bind="value: locationType">
+                                <option value="all">All</option>
+                                <option value="education">Schools</option>
+                                <option value="sports">Sport centers & Gyms</option>
+                                <option value="parks">Parks</option>
+                                <option value="shops">Local Shops</option>
+                                <option value="food">Food Places</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="filter-btn" type="button" data-bind="click: setFilter">Show Locations!</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="list-view">
+                    <h3 id="list-view-title"><span>Locations</span></h3>
+                    <div data-bind="foreach: locationList">
+                        <li class="location-title" data-bind="text: title, click: $parent.setLocation"></li>
+                        <p class="location-info" data-bind="text: info, visible: visibility"></p>   
+                    </div>
+                </div>
+                <div id="map"></div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer-phrase">
+                <p>Full Stack Nanodegree Program - Project 05 - by Marcus Guidoti. 
+                    <span>Full documentation available on this 
+                    <a href="https://github.com/mguidoti/FSND-p5-neighborhood_map">repository.</a></span> Powered by:</p>
+            </div>
+            <div id="footer-logos">
+                <img class="footer-logo" src="img/foursquare_logo_classic.png" alt="Foursquare">
+                <img class="footer-logo" src="img/google_maps_logo_black.png" alt="Google Maps">
+            </div>
+        </footer>
+        <script src="js/googleMaps.js"></script>
+        <script src="js/myPlaces.js"></script>
+        <script src="js/lib/knockout-3.5.0.js"></script>
+        <script src="js/app.js"></script>
+        <script async defer
+            src=
+            "https://maps.googleapis.com/maps/api/js?key=AIzaSyDgar4xOJZLxPTYF-boZis5R_NhJxVkPQU&libraries=places,drawing,geometry&v=3&callback=initMap">
+        </script>
+    </body>
+</html>

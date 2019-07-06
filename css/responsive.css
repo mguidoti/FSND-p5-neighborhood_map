@@ -1,0 +1,147 @@
+@media screen and (min-width: 400px) {
+    
+    header h1 {
+        text-align: right;
+        
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+    
+    header h1 {
+        text-align: right;
+        
+    }
+    
+
+    /*PRESENTATION*/
+
+    #presentation {
+        font-size: 16px; 
+    }
+
+
+    /*FILTER*/
+
+    #filter-text h2 {
+        font-size: 30px;
+    }
+    
+    #filter-lst select {
+        font-size: 14px;
+        height: 35px;
+    }
+    
+    #filter-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+
+    /*LOCATIONS AND MAP*/
+
+    #map { 
+        width: 75%;
+        height: 600px;
+        }
+    
+    #list-view {
+        width: 24%;
+    }
+
+
+    /*FOOTER*/
+    
+    #footer-phrase p {
+        font-size: 14px;
+    }
+    
+    .footer-logo {
+        height: 25px;
+        margin-top: 4px;
+    }
+}
+
+
+@media screen and (min-width: 730px) {
+  
+    header h1 {
+        text-align: right;
+        
+    }
+    
+
+    /*PRESENTATION*/
+
+    #presentation {
+        font-size: 18px; 
+    }
+
+
+    /*FILTER*/
+
+    #filter-text h2 {
+        font-size: 35px;
+    }
+    
+    #filter-lst select {
+        font-size: 16px;
+        height: 40px;
+    }
+    
+    #filter-btn {
+        padding: 12px 22px;
+        font-size: 16px;
+    }
+    
+
+    /*FOOTER*/
+
+    #footer-phrase p {
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        height: 30px;
+        margin-top: 6px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+  
+    /*ADDING MARGINS AND MAX WIDTH*/
+    
+    main, header, header img {
+        width: 1025px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    header h1 {
+        text-align: right;
+        
+    }
+
+    
+    /*PRESENTATION*/
+
+    #presentation {
+        font-size: 20px; 
+    }
+
+
+    /*FILTER*/
+
+    #filter-text h2 {
+        font-size: 40px;
+    }
+    
+    .footer-logo {
+        height: 35px;
+        margin-top: 8px;
+    }
+}
+

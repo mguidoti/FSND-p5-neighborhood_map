@@ -1,0 +1,10 @@
+# My .gitignore #
+###################
+
+# Ignore /img
+/img/*
+
+# Except these three files
+!foursquare_logo_classic.png
+!google_maps_logo_black.png
+!poa-skyline-live-trace.png
