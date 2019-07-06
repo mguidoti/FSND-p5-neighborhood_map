@@ -239,8 +239,8 @@ function myInfoWindow(marker, infowindow) {
         }
 
         // AJAX Request for venue tips on Foursquare
-        const foursquareClientID = 'VK31XCCX1Q4K2BDABYZNB3WEQLRCG2V0VGKJFDZ20GBJCEYS';
-        const foursquareClientSecret = 'EDA0P4IS2O1HTJBZN0S31XQCCDULNDEUNABBOLSKXWD3PHHB';
+        const foursquareClientID = 'INSERT-CLIENT-ID-HERE';
+        const foursquareClientSecret = 'INSERT-CLIENT-SECRET-HERE';
 
         // Building Foursquare API URL
         let foursquareUrlAPI = 'https://api.foursquare.com/v2/venues/' +
