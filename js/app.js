@@ -7,7 +7,7 @@ var Location = function(place) {
 
 var ViewModel = function() {
 
-    var self = this;
+    const self = this;
 
     // Create an observable to hold the information on the type of location 
     // to be shown.

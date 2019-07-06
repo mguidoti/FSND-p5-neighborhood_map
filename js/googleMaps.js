@@ -1,8 +1,8 @@
 // Create a new blank array to hold all the listing markers.
 // This array is intended to be accessed in app.js.
-var markers = [];
+let markers = [];
 
-var map = [];
+let map = [];
 
 function initMap() {
     
@@ -101,21 +101,21 @@ function initMap() {
 
     // Create the infowindow object, that will show information from
     // Google Maps and Foursquare APIs.
-    var infowindow = new google.maps.InfoWindow();
+    let infowindow = new google.maps.InfoWindow();
 
     // Set the color of the default markers.
-    var defaultIcon = makeMarkerIcon('00ff00');
+    const defaultIcon = makeMarkerIcon('00ff00');
 
     // Change color of the marker. To be used with a mouseover event listener.
-    var highlightedIcon = makeMarkerIcon('ffffff');
+    const highlightedIcon = makeMarkerIcon('ffffff');
 
     // Change color of the marker. To be used with a on click event listener, 
     // and when the respective location is clicked in the list.
-    var clickedIcon = makeMarkerIcon('d3d3d3');
+    const clickedIcon = makeMarkerIcon('d3d3d3');
 
     // Create a new LatLngBounds object that gets the southwest and northeast 
     // corners of the view port, to center the map accordingly to the markers.
-    var bounds = new google.maps.LatLngBounds();
+    let bounds = new google.maps.LatLngBounds();
 
     // Go through the location array to create an array of markers.
     for (var i = 0; i < myPlaces.length; i++) {
