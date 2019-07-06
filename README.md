@@ -12,7 +12,7 @@ The goal of this project is to implement an one page app listing locations on a 
 
 #### Chosen theme
 
-My version of this project was named **'my home town'** for a reason: it shows places from the city where I grew up, like schools that I've attended, or gyms that I used to workout, or parks that I love to go. A total of 16 places were hard coded into the `js/places.js` with their names, coordinates, Google Maps and Foursquare IDs, and an additional personal info/comment on every and each of them. They were divided into five different types, which are used in the location filter: education, sports, parks, local shops and food places (which includes restaurants, coffee shops and others). Not all locations has Foursquare pages, which means, this part of the information on these locations will be missing on their respective InfoWindows.
+My version of this project was named **'my home town'** for a reason: it shows places from the city where I grew up, like schools that I've attended, or gyms that I used to workout, or parks that I love to go. A total of 15 places were hard coded into the `js/places.js` with their names, coordinates, Google Maps and Foursquare IDs, and an additional personal info/comment on every and each of them. The IDs were collected manually using this [link](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder) and this [API endpoint](https://developer.foursquare.com/docs/api/venues/search), respectively. They were divided into five different types, which are used in the location filter: education, sports, parks, local shops and food places (which includes restaurants, coffee shops and others). Not all locations has Foursquare pages, which means, this part of the information on these locations will be missing on their respective InfoWindows.
 
 
 
@@ -28,7 +28,7 @@ The app is responsive and it was tested for mobile (nexus 5 and iphone X) and ta
 
 - **Markup languages**: HTML5, CSS3 
 - **Programming languages**: JavaScript
-- **JS Libraries**: Knockout
+- **JS Libraries**: jQuery, Knockout
 - **APIs**: Google Maps API, Foursquare
 
 
@@ -42,6 +42,12 @@ First, clone or download this repository; then, navigate to the folder and run i
 ### Sources
 
 This projected used a [cover image](https://i.pinimg.com/originals/6d/4b/5e/6d4b5edf80117fbf73d4dab7be8ab7f9.jpg) found on a simple Google search, and an open sourced [black and white Google Maps Style](https://snazzymaps.com/style/79/black-and-white) from [Snazzymaps.com](https://snazzymaps.com). https://snazzymaps.com/). Foursquare and Google Maps black logos were found [here](https://tchol.org/images/foursquare-png-13.png) and [here](https://image.flaticon.com/icons/png/512/104/104106.png), respectively. 
+
+
+
+### Known Issues
+
+As the locations are all from a Brazilian city, the info Foursquare's tips are in Brazilian Portuguese - sorry for that!
 
 
 
