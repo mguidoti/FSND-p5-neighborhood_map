@@ -4,7 +4,6 @@
 const myPlaces = [
 	{
 		title: 'Escola Estadual de Ensino Médio Anne Frank',
-		//address: 'Av. Cauduro, 238 - Bom Fim, Porto Alegre - RS, 90035-110',
 		position: {lat: -30.031984, lng: -51.213281},
 		googleMaps_ID: 'ChIJgztOUKx5GZUR0a1E0OGBBNE',
 		foursquare_id: '4dc1312690a09cb2036f8fe1',
@@ -13,7 +12,6 @@ const myPlaces = [
 	},
     {
 		title: 'Colégio Santa Inês',
-		//address: 'Av. Protásio Alves, 2493 - Petrópolis, Porto Alegre - RS, 90690-380',
 		position: {lat: -30.043879, lng: -51.184321},
 		googleMaps_ID: 'ChIJb0OOjCF4GZURw7DutUnrESM',
 		foursquare_id: '4c1a187b4ff90f4717db1049',
@@ -22,7 +20,6 @@ const myPlaces = [
 	},
 	{
 		title: 'UFRGS - Campus do Vale',
-		//address: 'Av. Bento Gonçalves, 9500 - Agronomia, Porto Alegre - RS, 90650-001',
 		position: {lat: -30.076292, lng: -51.124762},
 		googleMaps_ID: 'ChIJRzMXLsqdGZUR4brbGo1kVq4',
 		foursquare_id: '4d9223a6270e6ea8d2f762ff',
@@ -31,7 +28,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Academia Kyokushin',
-		//address: 'Av. Protásio Alves, 370 - Rio Branco, Porto Alegre - RS, 90430-181',
 		position: {lat: -30.037491, lng: -51.204366},
 		googleMaps_ID: 'ChIJMZ6l-kt4GZURZe6qqEWRiEQ',
 		foursquare_id: '4d5450a6fb65236a16faecb3',
@@ -40,7 +36,6 @@ const myPlaces = [
 	},
 	{
 		title: 'PUCRS',
-		//address: 'Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900',
 		position: {lat: -30.058639, lng: -51.17338},
 		googleMaps_ID: 'ChIJl0hQof53GZURwqVixlymIB4',
 		foursquare_id: '4b7572f3f964a5201a0d2ee3',
@@ -49,7 +44,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Pastel com Borda',
-		//address: 'Rua Fernandes Vieira, 454 - Bom Fim, Porto Alegre - RS, 90035-090',
 		position: {lat: -30.033412, lng: -51.21082},
 		googleMaps_ID: 'ChIJLz5qYq15GZURv-BsK2PPpRQ',
 		foursquare_id: '4b91e2eaf964a520a5dd33e3',
@@ -59,7 +53,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Parque Esportivo PUCRS',
-		//address: '80 e 81, Av. Ipiranga, 6690 - Partenon, RS, 90619-900',
 		position: {lat: -30.055589, lng: -51.172563},
 		googleMaps_ID: 'ChIJaS4gjPt3GZUR6v4fLveGjQs',
 		foursquare_id: '4bda17b7c79cc928e5747de9',
@@ -68,7 +61,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Cronks Sorvetes',
-		//address: 'R. Felipe Camarão, 611 - Bom Fim, Porto Alegre - RS, 90035-141',
 		position: {lat: -30.034722, lng: -51.20993},
 		googleMaps_ID: 'ChIJXwkKS014GZUR7CFLKCA5Z_c',
 		foursquare_id: '4b896e18f964a520863532e3',
@@ -77,7 +69,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Hebraica-RS',
-		//address: 'Rua General João Telles, 508 - Bom Fim, Porto Alegre - RS, 90035-121',
 		position: {lat: -30.033998, lng: -51.212597},
 		googleMaps_ID: 'ChIJiWjbDq15GZURHM8-9jZwcQY',
 		foursquare_id: '4bcbb1053740b71335116365',
@@ -86,7 +77,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Parque Farroupilha (Redenção)',
-		//address: 'Av. João Pessoa, S/N - Cidade Baixa, Porto Alegre - RS, 90040-000',
 		position: {lat: -30.036837, lng: -51.21606},
 		googleMaps_ID: 'ChIJLRV5SFN4GZURW_iaGl4vUqk',
 		foursquare_id: '4bec5abd2bc1b713e977bf3a',
@@ -95,7 +85,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Só Pizzas',
-		//address: 'R. Mariante, 935 - Rio Branco, Porto Alegre - RS, 90430-181',
 		position: {lat: -30.036234, lng: -51.204365},
 		googleMaps_ID: 'ChIJ9ZxaGld4GZURioWrDLWvKY0',
 		foursquare_id: '4e7919c1c65b0104459f5ffb',
@@ -104,7 +93,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Parque Moinhos de Vento (Parcão)',
-		//address: 'R. Comendador Caminha, s/n - Moinhos de Vento, Porto Alegre - RS, 90430-030',
 		position: {lat: -30.026804, lng: -51.20184},
 		googleMaps_ID: 'ChIJe5gScbV5GZURsKJKAJyw9E0',
 		foursquare_id: '4b0ff875f964a520e46623e3',
@@ -113,7 +101,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Livraria Bom Fim',
-		//address: 'Av. Osvaldo Aranha, 870 - Bom Fim, Porto Alegre - RS, 90035-191',
 		position: {lat: -30.034179, lng: -51.213588},
 		googleMaps_ID: 'ChIJAR1246x5GZURGSHFrJqTF4c',
 		foursquare_id: '4e43daf7d4c02cf15f5a691d',
@@ -122,7 +109,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Casa Londres',
-		//address: 'Av. Osvaldo Aranha, 1008 - Bom Fim, Porto Alegre - RS, 90035-191',
 		position: {lat: -30.034795, lng: -51.212367},
 		googleMaps_ID: 'ChIJFx6hN615GZURCyBPIvGCT70',
 		foursquare_id: '4c45fb3a342c1b8d8e3eb589',
@@ -131,7 +117,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Praça da Encol',
-		//address: 'Avenida Nilópolis, s/n - Bela Vista, Porto Alegre - RS, 90460-050',
 		position: {lat: -30.037654, lng: -51.188235},
 		googleMaps_ID: 'ChIJo3aTfi94GZURQ1zWNFL_1Bs',
 		foursquare_id: '4bf083301f17ef3b5eca9bc8',
@@ -140,7 +125,6 @@ const myPlaces = [
 	},
 	{
 		title: 'Paquetá',
-		//address: 'Av. Protásio Alves, 28 - Alto Petrópolis, Porto Alegre - RS, 90410-004',
 		position: {lat: -30.036758, lng: -51.207958},
 		googleMaps_ID: 'ChIJp5wLUkx4GZUR5sSJYeieGZE',
 		foursquare_id: '50379129c84c8874bb8b0525',
