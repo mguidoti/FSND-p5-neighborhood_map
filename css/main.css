@@ -110,6 +110,26 @@ header h1 {
     font-style: italic;
 }
 
+/*INFOWINDOW*/
+
+#infowindow h4 {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.infowindow-type {
+    font-weight: bold;
+}
+
+.infowindow-data {
+    font-style: italic;
+}
+
+#infowindow-4sq-author {
+    text-align: right;
+}
+
 /*FOOTER*/
 
 footer {
