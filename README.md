@@ -37,6 +37,8 @@ The app is responsive and it was tested for mobile (nexus 5 and iphone X) and ta
 
 First, clone or download this repository; then, navigate to the folder and run index.html. 
 
+**_I removed both Google Maps and Foursquare API keys for security reasons. You'll have to add yours at the last URL on index.html and on googlemaps.js, respectively. Sorry!_**
+
 
 
 ### Sources
