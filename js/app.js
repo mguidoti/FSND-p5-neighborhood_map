@@ -75,9 +75,13 @@ var ViewModel = function() {
                 self.locationList.push(new Location(each));
             });
  
-            // Also set all markers to 'visible'.
-            markers.forEach(function(each) {
-                each.setMap(map);
+            // Also set all markers to 'visible', and remove animation if exists.
+            markers.forEach(function(eachMarker) {
+                eachMarker.setMap(map);
+
+                if (eachMarker.getAnimation() !== null) {
+                    eachMarker.setAnimation(null);
+                }
             });
 
           // If not 'all', then, creset the observable array and only add locations
