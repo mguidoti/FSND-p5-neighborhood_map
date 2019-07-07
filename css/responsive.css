@@ -17,23 +17,23 @@
 
     /*PRESENTATION*/
 
-    #presentation {
+    .presentation {
         font-size: 16px; 
     }
 
 
     /*FILTER*/
 
-    #filter-text h2 {
+    .filter-text h2 {
         font-size: 30px;
     }
     
-    #filter-lst select {
+    .filter-lst select {
         font-size: 14px;
         height: 35px;
     }
     
-    #filter-btn {
+    .filter-btn {
         padding: 10px 20px;
         font-size: 14px;
     }
@@ -41,19 +41,19 @@
 
     /*LOCATIONS AND MAP*/
 
-    #map { 
+    .map-canvas { 
         width: 75%;
         height: 600px;
         }
     
-    #list-view {
+    .list-view {
         width: 24%;
     }
 
 
     /*FOOTER*/
     
-    #footer-phrase p {
+    .footer-phrase p {
         font-size: 14px;
     }
     
@@ -74,23 +74,23 @@
 
     /*PRESENTATION*/
 
-    #presentation {
+    .presentation {
         font-size: 18px; 
     }
 
 
     /*FILTER*/
 
-    #filter-text h2 {
+    .filter-text h2 {
         font-size: 35px;
     }
     
-    #filter-lst select {
+    .filter-lst select {
         font-size: 16px;
         height: 40px;
     }
     
-    #filter-btn {
+    .filter-btn {
         padding: 12px 22px;
         font-size: 16px;
     }
@@ -98,7 +98,7 @@
 
     /*FOOTER*/
 
-    #footer-phrase p {
+    .footer-phrase p {
         font-size: 16px;
     }
 
@@ -128,14 +128,14 @@
     
     /*PRESENTATION*/
 
-    #presentation {
+    .presentation {
         font-size: 20px; 
     }
 
 
     /*FILTER*/
 
-    #filter-text h2 {
+    .filter-text h2 {
         font-size: 40px;
     }
     
