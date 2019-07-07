@@ -48,7 +48,11 @@
     .map-canvas { 
         width: 75%;
         height: 600px;
-        }
+    }
+
+    .map-error {
+        margin-bottom: 0;
+    }
     
     .list-view {
         width: 24%;

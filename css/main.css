@@ -81,6 +81,11 @@ header h1 {
     height: 400px;
 }
 
+.map-error {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
 .list-view {
     width: 100%;
     float: left;

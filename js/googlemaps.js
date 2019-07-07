@@ -190,4 +190,16 @@ function myInfoWindow(marker, infowindow) {
     });
 }
 
+function googleMapsErrorHandler() {
+    
+    // Uses jQuery to get the element with ID='map'
+    const $mapDiv = $('#map');
+
+    // Adds content and a new class to it
+    $mapDiv.addClass("map-error")
+    $mapDiv.append('<h1>Sorry, Google Maps could not be loaded.</h1>');
+
+
+}
+
 
