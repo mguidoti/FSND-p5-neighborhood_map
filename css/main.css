@@ -79,7 +79,7 @@ header h1 {
 #map { 
     width: 100%;
     height: 400px;
-    }
+}
 
 #list-view {
     width: 100%;
@@ -110,6 +110,7 @@ header h1 {
     font-style: italic;
 }
 
+
 /*INFOWINDOW*/
 
 #infowindow h4 {
@@ -129,6 +130,7 @@ header h1 {
 #infowindow-4sq-author {
     text-align: right;
 }
+
 
 /*FOOTER*/
 
