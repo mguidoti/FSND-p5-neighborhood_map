@@ -13,9 +13,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -30.034647, lng: -51.217658},
       zoom: 14,
-      // Create a styles array to use with the map
       styles: myStyle,
-      // set to false the ability to change the map type (e.g., terrain, satellite)
       mapTypeControl: false
     });
 
