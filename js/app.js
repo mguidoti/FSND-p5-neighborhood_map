@@ -1,13 +1,13 @@
 'use strict';
 
-var Location = function(place) {
+const Location = function(place) {
     this.title = ko.observable(place.title);
     this.type = ko.observable(place.type);
     this.info = ko.observable(place.info);
     this.visibility = ko.observable(false);
 }
 
-var ViewModel = function() {
+const ViewModel = function() {
 
     const self = this;
 
@@ -33,7 +33,7 @@ var ViewModel = function() {
         
         // Get visibility status of the clicked location before making any 
         // significant changes.
-        var clickedLocationVisibility = clickedLocation.visibility();
+        let clickedLocationVisibility = clickedLocation.visibility();
 
         // try and catch block to avoid the error that occurs when the 
         // currentLocation is still empty.
