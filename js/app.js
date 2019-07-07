@@ -1,9 +1,9 @@
 'use strict';
 
 const Location = function(place) {
-    this.title = ko.observable(place.title);
-    this.type = ko.observable(place.type);
-    this.info = ko.observable(place.info);
+    this.title = place.title;
+    this.type = place.type;
+    this.info = place.info;
     this.visibility = ko.observable(false);
 }
 
@@ -52,7 +52,7 @@ const ViewModel = function() {
             // Set marker animation to BOUNCE when a given location is 'activated'. 
             markers.forEach(function(eachMarker) {
                      
-                if (clickedLocation.title() == eachMarker.title) {
+                if (clickedLocation.title == eachMarker.title) {
                     if (eachMarker.getAnimation() == null) {
                         eachMarker.setAnimation(google.maps.Animation.BOUNCE);
                     } else {
