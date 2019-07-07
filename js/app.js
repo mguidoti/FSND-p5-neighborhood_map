@@ -1,3 +1,5 @@
+'use strict';
+
 var Location = function(place) {
     this.title = ko.observable(place.title);
     this.type = ko.observable(place.type);

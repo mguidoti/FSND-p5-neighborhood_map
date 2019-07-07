@@ -1,3 +1,5 @@
+'use strict';
+
 // Array hard coding locations
 const myPlaces = [
 	{

@@ -1,3 +1,5 @@
+'use strict';
+
 // Create a new blank array to hold all the listing markers.
 // This array is intended to be accessed in app.js.
 let markers = [];
@@ -239,8 +241,8 @@ function myInfoWindow(marker, infowindow) {
         }
 
         // AJAX Request for venue tips on Foursquare
-        const foursquareClientID = 'INSERT-CLIENT-ID-HERE';
-        const foursquareClientSecret = 'INSERT-CLIENT-SECRET-HERE';
+        const foursquareClientID = 'VK31XCCX1Q4K2BDABYZNB3WEQLRCG2V0VGKJFDZ20GBJCEYS';
+        const foursquareClientSecret = 'EDA0P4IS2O1HTJBZN0S31XQCCDULNDEUNABBOLSKXWD3PHHB';
 
         // Building Foursquare API URL
         let foursquareUrlAPI = 'https://api.foursquare.com/v2/venues/' +
