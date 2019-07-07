@@ -196,7 +196,7 @@ function googleMapsErrorHandler() {
     const $mapDiv = $('#map');
 
     // Adds content and a new class to it
-    $mapDiv.addClass("map-error")
+    $mapDiv.addClass("map-error");
     $mapDiv.append('<h1>Sorry, Google Maps could not be loaded.</h1>');
 
 

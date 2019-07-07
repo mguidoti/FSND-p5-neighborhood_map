@@ -5,7 +5,7 @@ const Location = function(place) {
     this.type = place.type;
     this.info = place.info;
     this.visibility = ko.observable(false);
-}
+};
 
 const ViewModel = function() {
 
@@ -71,7 +71,7 @@ const ViewModel = function() {
                 eachMarker.setAnimation(null);
             } 
         });
-    }
+    };
     
 
     // Filter locations, changing in both location list and on the map by
@@ -124,8 +124,7 @@ const ViewModel = function() {
                 }
             });
         }
-    }
-}
+    };
+};
 
 ko.applyBindings(new ViewModel());
-
