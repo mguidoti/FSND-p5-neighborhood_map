@@ -1,11 +1,11 @@
 'use strict';
 
-// Create a new blank array to hold all the listing markers.
-// This array is intended to be accessed in app.js.
+// Create a new blank array to hold all the listing markers
+// This array is intended to be accessed in app.js
 let markers = [];
 
 // Create a new variable to hold the future map while being
-// accessible externally, from app.js.
+// accessible externally, from app.js
 let map = [];
 
 function initMap() {
@@ -18,23 +18,23 @@ function initMap() {
     });
 
     // Create the infowindow object, that will show information from
-    // Google Maps and Foursquare APIs.
+    // Google Maps and Foursquare APIs
     let infoWindow = new google.maps.InfoWindow();
 
-    // Set the color of the default markers.
+    // Set the color of the default markers
     const defaultIcon = makeMarkerIcon('00ff00');
 
     // Change color of the marker. To be used with a on click event listener, 
-    // and when the respective location is clicked in the list.
+    // and when the respective location is clicked in the list
     const clickedIcon = makeMarkerIcon('d3d3d3');
 
     // Create a new LatLngBounds object that gets the southwest and northeast 
-    // corners of the view port, to center the map accordingly to the markers.
+    // corners of the view port, to center the map accordingly to the markers
     let bounds = new google.maps.LatLngBounds();
 
-    // Go through the location array to create an array of markers.
+    // Go through the location array to create an array of markers
     for (let i = 0; i < myPlaces.length; i++) {
-        // Create a marker for each location, and put into the markers array.
+        // Create a marker for each location, and put into the markers array
         const marker = new google.maps.Marker({
           map: map,
           position: myPlaces[i].position,
@@ -45,27 +45,27 @@ function initMap() {
           foursquare_id: myPlaces[i].foursquare_ID
         });
 
-        // Push the marker to the array of markers.
+        // Push the marker to the array of markers
         markers.push(marker);
 
         // Create an onclick event to open an infowindow when each marker is 
-        // clicked (that's what the 'this' part is doing here).
+        // clicked (that's what the 'this' part is doing here)
         marker.addListener('click', function() {
             this.setIcon(clickedIcon);
             myInfoWindow(this, infoWindow);
             map.setCenter(marker.position);
         });
 
-        // Adds the marker to the LatLngBounds instance...
+        // Adds the marker to the LatLngBounds instance
         bounds.extend(markers[i].position);
       }
 
-    // Extend the boundaries of the map by applying the LatLngBounds instance.
+    // Extend the boundaries of the map by applying the LatLngBounds instance
     map.fitBounds(bounds);
 
     // This function takes in a COLOR, and then creates a new marker
     // icon of that color. The icon will be 21px wide by 34px, have an origin
-    // on 0, 0 and be anchored at 10, 34.
+    // on 0, 0 and be anchored at 10, 34
     function makeMarkerIcon(markerColor) {
         const markerImage = new google.maps.MarkerImage(
         'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|' + 
@@ -132,7 +132,7 @@ function myInfoWindow(marker, infowindow) {
                     '</a></span></p>';
             }
         
-            // Make sure the marker property is cleared if the infowindow is closed.
+            // Make sure the marker property is cleared if the infowindow is closed
             infowindow.addListener('closeclick', function() {
                 infowindow.marker = null;
             });
@@ -201,5 +201,3 @@ function googleMapsErrorHandler() {
 
 
 }
-
-
