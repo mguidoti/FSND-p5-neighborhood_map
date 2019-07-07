@@ -30,7 +30,7 @@ const ViewModel = function() {
     // information per location. Also hides the information when the visible 
     // location is clicked again.
     this.setLocation = function(clickedLocation) {
-        
+    
         // Get visibility status of the clicked location before making any 
         // significant changes.
         let clickedLocationVisibility = clickedLocation.visibility();
@@ -52,6 +52,18 @@ const ViewModel = function() {
             if (clickedLocation.title == eachMarker.title) {
                 if (eachMarker.getAnimation() == null) {
                     eachMarker.setAnimation(google.maps.Animation.BOUNCE);
+
+                    // Create the infowindow object, that will show information from
+                    // Google Maps and Foursquare APIs.
+                    //
+                    // This is commented out because I don't think this is what the
+                    // requirement asked. Please, see my arguments on my submission
+                    // post. Thanks!
+                    /*
+                    let infoWindow = new google.maps.InfoWindow();
+                    myInfoWindow(eachMarker, infoWindow)
+                    */
+
                 } else {
                     eachMarker.setAnimation(null);
                 }
