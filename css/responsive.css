@@ -1,5 +1,7 @@
 @media screen and (min-width: 400px) {
     
+    /*HEADER*/
+
     header h1 {
         text-align: right;
         
@@ -9,6 +11,8 @@
 
 @media screen and (min-width: 650px) {
     
+    /*HEADER*/
+
     header h1 {
         text-align: right;
         
@@ -65,7 +69,9 @@
 
 
 @media screen and (min-width: 730px) {
-  
+
+    /*HEADER*/
+
     header h1 {
         text-align: right;
         
@@ -120,6 +126,8 @@
     }
 
 
+    /*HEADER*/
+
     header h1 {
         text-align: right;
         
@@ -144,4 +152,3 @@
         margin-top: 8px;
     }
 }
-
