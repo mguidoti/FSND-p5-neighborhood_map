@@ -170,23 +170,23 @@ function myInfoWindow(marker, infowindow) {
         $.getJSON(foursquareUrlAPI, function(data) {
 
             // Gets data if the API call response is successfull
-            if (data["meta"]["code"] == 200) {
+            if (data.meta.code == 200) {
                 
                 // Check if there is any tip on this response
-                if (data["response"]["tips"]["items"].length > 0) {
+                if (data.response.tips.items.length > 0) {
 
                     infoWindowContent += "<br><h4>Foursquare #1 Tip</h4>";
                     
                     infoWindowContent += '<p><span class="infowindow-data">"' +
-                        data["response"]["tips"]["items"][0]["text"] +
+                        data.response.tips.items[0].text +
                         '"</span></p>';
                     
                     infoWindowContent += '<p id="infowindow-4sq-author"><span class="infowindow-type">' +
-                        data["response"]["tips"]["items"][0]["user"]["firstName"] +
+                        data.response.tips.items[0].user.firstName +
                         ' </span>';
                     
                     infoWindowContent += '<span class="infowindow-data">(Likes: ' +
-                        data["response"]["tips"]["count"] +
+                        data.response.tips.count +
                         ')</span></p>';  
                 } else {
                     infoWindowContent += "<br><h4>Foursquare has no Tips for this location</h4>";
