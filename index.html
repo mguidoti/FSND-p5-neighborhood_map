@@ -48,7 +48,7 @@
                 <div id="list-view">
                     <h3 id="list-view-title"><span>Locations</span></h3>
                     <div data-bind="foreach: locationList">
-                        <li class="location-title" data-bind="text: title, click: $parent.setLocation"></li>
+                        <div class="location-title" data-bind="text: title, click: $parent.setLocation"></div>
                         <p class="location-info" data-bind="text: info, visible: visibility"></p>   
                     </div>
                 </div>
