@@ -35,35 +35,32 @@ const ViewModel = function() {
         // significant changes.
         let clickedLocationVisibility = clickedLocation.visibility();
 
-        // try and catch block to avoid the error that occurs when the 
-        // currentLocation is still empty.
-        try {
+        // To avoid the error that occurs when the currentLocation is still empty.
+        if (self.currentLocation()) {
             self.currentLocation().visibility(false);
-            
-        } catch {} finally {
+        }
 
-            // This makes sure that only when it was hidden that it becomes
-            // visible. With this, I can 'hide' the active current location too.
-            if (clickedLocationVisibility == false) { 
-                self.currentLocation(clickedLocation);
-                self.currentLocation().visibility(true);
-            } 
+        // Display unique information only when the clicked location is not being shown 
+        if (clickedLocationVisibility == false) { 
+            self.currentLocation(clickedLocation);
+            self.currentLocation().visibility(true);
+        }
 
-            // Set marker animation to BOUNCE when a given location is 'activated'. 
-            markers.forEach(function(eachMarker) {
-                     
-                if (clickedLocation.title == eachMarker.title) {
-                    if (eachMarker.getAnimation() == null) {
-                        eachMarker.setAnimation(google.maps.Animation.BOUNCE);
-                    } else {
-                        eachMarker.setAnimation(null);
-                    }
+        // Set marker animation to BOUNCE when a given location is 'activated'. 
+        markers.forEach(function(eachMarker) {
+                    
+            if (clickedLocation.title == eachMarker.title) {
+                if (eachMarker.getAnimation() == null) {
+                    eachMarker.setAnimation(google.maps.Animation.BOUNCE);
                 } else {
                     eachMarker.setAnimation(null);
-                } 
-            });
-        }
+                }
+            } else {
+                eachMarker.setAnimation(null);
+            } 
+        });
     }
+    
 
     // Filter locations, changing in both location list and on the map by
     // calling functions defined on googleMaps.js.
