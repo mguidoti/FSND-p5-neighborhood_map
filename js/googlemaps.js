@@ -24,9 +24,6 @@ function initMap() {
     // Set the color of the default markers.
     const defaultIcon = makeMarkerIcon('00ff00');
 
-    // Change color of the marker. To be used with a mouseover event listener.
-    const highlightedIcon = makeMarkerIcon('ffffff');
-
     // Change color of the marker. To be used with a on click event listener, 
     // and when the respective location is clicked in the list.
     const clickedIcon = makeMarkerIcon('d3d3d3');
@@ -57,16 +54,6 @@ function initMap() {
             this.setIcon(clickedIcon);
             myInfoWindow(this, infoWindow);
             map.setCenter(marker.position);
-        });
-
-        // Adds two event listeners, one for mouseover and one for mouseout
-        // to highlight the markers' icons accordingly.
-        marker.addListener('mouseover', function() {
-            this.setIcon(highlightedIcon);
-        });
-
-        marker.addListener('mouseout', function() {
-            this.setIcon(defaultIcon);
         });
 
         // Adds the marker to the LatLngBounds instance...
