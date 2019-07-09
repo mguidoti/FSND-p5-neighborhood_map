@@ -8,6 +8,8 @@
 
 The goal of this project is to implement an one page app listing locations on a map, providing information from more than one API provider, in a responsive manner. The data model framework to be used is [Knockout](https://knockoutjs.com/index.html), and the [Udacity JavaScript Style Guide](https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html) has to be followed as well.
 
+I'm also using [Udacity Git Commit Message Style Guide](https://udacity.github.io/git-styleguide/) for this project.
+
 
 
 #### Chosen theme
